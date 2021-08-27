@@ -126,7 +126,7 @@ body {
     object-position: right top;
   }
   .container .main {
-    width: 40%;
+    width: 50%;
     margin-right: 2rem;
   }
   .container .main .description h1, .container .main .description p {
