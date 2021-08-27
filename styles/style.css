@@ -115,14 +115,18 @@ body {
   }
   .container {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
   .container .img-container {
+    width: 50%;
+    height: 100%;
     border-radius: 0 10px 10px 0;
   }
   .container .img-container img {
     object-position: right top;
   }
   .container .main {
+    width: 40%;
     margin-right: 2rem;
   }
   .container .main .description h1, .container .main .description p {
@@ -138,11 +142,9 @@ body {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 70%;
-  }
-  .container .img-container {
     height: 400px;
   }
 }

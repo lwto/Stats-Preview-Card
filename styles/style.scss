@@ -108,13 +108,17 @@ body{
     }
     .container{
         flex-direction: row-reverse;
+        justify-content: space-between;
         .img-container{
+            width:50%;
+            height:100%;
             border-radius:0 10px 10px 0;
             img{
                 object-position: right top;
             }
         }
         .main{
+            width:40%;
             margin-right: 2rem;
             .description{
                 h1,p{
@@ -132,11 +136,9 @@ body{
         }
     }  
 }
-@media screen and (min-width:900px) {
+@media screen and (min-width:1200px) {
     .container{
         width:70%;
-        .img-container{
-            height: 400px;
-        }
+        height:400px;
     }
 }
