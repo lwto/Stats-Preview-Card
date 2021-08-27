@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 15px;
+  background-color: #090b1a;
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 90%;
+  margin: 5rem 0;
+  background-color: #1b1938;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .img-container {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #aa5cdb;
+  border-radius: 10px 10px 0 0;
+}
+
+.container .img-container img {
+  opacity: 0.3;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container .main {
+  padding: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .main .description h1 {
+  text-align: center;
+  color: white;
+}
+
+.container .main .description h1 b {
+  color: #aa5cdb;
+}
+
+.container .main .description p {
+  text-align: center;
+  padding-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.container .main .stats {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .main .stats .stat {
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .main .stats .stat h2 {
+  color: white;
+  padding-bottom: 8px;
+}
+
+.container .main .stats .stat p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.attribution {
+  padding: 8px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 10px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .container .img-container {
+    border-radius: 0 10px 10px 0;
+  }
+  .container .img-container img {
+    -o-object-position: right top;
+       object-position: right top;
+  }
+  .container .main {
+    margin-right: 2rem;
+  }
+  .container .main .description h1, .container .main .description p {
+    text-align: left;
+  }
+  .container .main .stats {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .main .stats .stat {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container .img-container {
+    height: 500px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
